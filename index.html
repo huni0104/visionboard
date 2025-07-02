@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>desol Studio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #111;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #000;
+      font-size: 1.2rem;
+    }
+    .intro {
+      padding: 2rem 2rem 2rem 2rem; /* 위, 오른쪽, 아래, 왼쪽 */
+      max-width: 800px;           /* 기존 800px 제한을 제거 (선택) */
+      font-size: 2rem;
+      text-align: left;
+    }
+    h2 {
+      font-size: 1rem;
+      margin: 2rem 0 1rem 0;
+      padding-left: 2rem;
+    }
+    /*.exhibition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 0 2rem;
+     } */
+
+    .exhibition-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2열 고정 */
+      gap: 1rem;
+      padding: 0 2rem;
+    }
+
+    .exhibition-grid img {
+      width: 100%;
+      aspect-ratio: 4 / 5; /* 또는 원하는 비율: 1 / 1, 16 / 9 등 */
+      object-fit: cover;   /* 이미지가 비율을 채우도록 자르기 */
+      background-color: #f0f0f0; /* (선택) 깜빡임 방지용 백그라운드 */
+    }
+    .exhibition-caption {
+      font-size: 0.8rem;
+      color: #444;
+      padding: 0.3rem 2rem;
+    }
+    .footer {
+      padding: 2rem;
+      font-size: 0.8rem;
+      border-top: 1px solid #ddd;
+    }
+    .footer img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 1rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-size: 1.2rem;"><strong>desol Studio</strong></div>
+    <nav>
+      <a href="#">Main</a>
+      <a href="#">Exhibitions</a>
+      <a href="#">Press</a>
+      <a href="#">Notice</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <p><strong style="font-style: italic">desol studio</strong> represents the initials of 'ordinary art original art', a space that introduces art creating a point of natural sympathy for the ordinary daily life of the viewer, the artist’s personal experience, and the artistic spirit inherent in the work.</p>
+  </section>
+
+  <h2>Rest life</h2>
+  <section class="exhibition-grid">
+    <img src="images/1.jpg" alt="Rest life 1">
+    <img src="images/2.jpg" alt="Rest life 2">
+    <img src="images/3.jpg" alt="Rest life 3">
+    <img src="images/4.jpg" alt="Rest life 4">
+  </section>
+  <div class="exhibition-caption">Seung Keun Jeong x Sangjin Heo: Reading and Misreading<br>06/14-07/16/2025</div>
+<hr>
+  <h2>a leisurely afternoon
+</h2>
+  <section class="exhibition-grid">
+
+    <img src="images/5.jpg" alt="a leisurely afternoon 1">
+    <img src="images/6.jpg" alt="a leisurely afternoon 2">
+    <img src="images/7.jpg" alt="a leisurely afternoon 3">
+    <img src="images/8.jpg" alt="a leisurely afternoon 4">
+  </section>
+  <div class="exhibition-caption">
+    Jueun An: Vital Remains 04/11-05/11/2025<br>
+    Minou Kim: Silent Night, a Song We Sing Together 03/06-03/31/2025<br>
+    Sukh Lee: Still Life, Manual 02/04-02/24/2025
+  </div>
+
+  <footer class="footer">
+    <button onclick="alert('About Section')">About</button>
+    <p>32-11, Samseong-ro 63-gil, Gangnam-gu, Seoul, Republic of Korea<br>
+    E: oaoagallery@gmail.com<br>
+    T: 02.6927.3211<br>
+    IG: @oaoa_gallery</p>
+    <p>
+      Wednesday - Saturday, 11am - 18pm<br>
+      (Closed on Mon, Tue, Sunday and Holidays)
+    </p>
+    <img src="gallery-front.jpg" alt="gallery front view">
+    <p>Copyright 2022. oaoa gallery All rights reserved.</p>
+  </footer>
+</body>
+</html>
